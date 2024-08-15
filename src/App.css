@@ -1,0 +1,253 @@
+/* General App Styling */
+.App {
+  font-family: 'Roboto Serif', serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  font-family: 'Roboto Serif', serif;
+  margin-top: 10px;
+}
+
+.Sidebar {
+  width: 100%;
+  background-color: #495e57;
+  padding: 20px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.MainContent {
+  margin-top: 100px; /* Adjust based on Sidebar height */
+  margin-left: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 20px;
+}
+
+/* Sidebar Styles */
+.Sidebar-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+img.Header-logo {
+  width: 90%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+  filter: hue-rotate(287deg);
+  filter: brightness(200%);
+}
+
+nav.navigationBar {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+
+nav.navigationBar a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #f4ce14;
+  font-weight: 700;
+}
+
+/* Header */
+/* Header */
+header {
+  padding-top: 30px;
+  position: relative;
+  height: 400px; /* Adjust as needed */
+  overflow: hidden; /* Ensures that any content doesn't overflow the header's borders */
+  display: flex; /* Use flexbox to center content vertically */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+.headerBG {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensures the image stays behind the text */
+}
+
+img.Header-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire header */
+  filter: brightness(80%); /* Optional: Adjust brightness if needed */
+}
+
+.header-info {
+  position: relative;
+  z-index: 1; /* Places the text in front of the image */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Adds a semi-transparent background for readability */
+  color: #fff;
+  text-align: center; /* Center text horizontally */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.header-info > h3 {
+  color: #f4ce14;
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+/* Menu Section */
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4ce14;
+  padding: 10px;
+  border-radius: 5px;
+  width: calc(33.333% - 15px); /* Ensures 3 items per row with spacing */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.menu-item button {
+  background-color: #495e57;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu-item button:hover {
+  background-color: #102c23;
+}
+
+/* Cart and Order Section */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4ce14;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.remove-button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: #e63946;
+}
+
+h2, h3 {
+  color: #495e57;
+}
+
+/* Confirmation Overlay */
+.confirmation-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.confirmation-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.confirmation-content h2 {
+  color: #495e57;
+  margin-bottom: 20px;
+}
+
+.confirmation-content button {
+  background-color: #495e57;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirmation-content button:hover {
+  background-color: #102c23;
+}
+
+/* Footer */
+.footer {
+  background-color: #495e57;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #f4ce14;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
